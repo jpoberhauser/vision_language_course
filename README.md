@@ -3,7 +3,7 @@
 
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Deliverables** |
 | --- | --- | --- | --- | --- | --- |
-| 🔲 | Week 1 | Re-implement basic ViT from scratch (no framework) | Code | ViT paper (Dosovitskiy), lucidrains' vit-pytorch [https://arxiv.org/abs/2010.11929] | Working ViT class + blog on attention in vision |
+| X | Week 1 | Re-implement basic ViT from scratch (no framework) | Code | ViT paper (Dosovitskiy), lucidrains' vit-pytorch [https://arxiv.org/abs/2010.11929] | Working ViT class + blog on attention in vision |
 | 🔲 | Week 2 | Compare ViT with Swin, CoAtNet, DeiT + deep dive on multi-head self-attention in spatial domain | Theory/Compare | Papers: Swin, DeiT, CoAtNet; timm repo; "Attention Is All You Need", Annotated Transformer | Comparison table + doc on token vs patch attention |
 | 🔲 | Week 3 | Train ViT and DeiT on CIFAR100 or Food101 | Practice | timm, HuggingFace Datasets, wandb | Model training logs + report on performance tradeoffs |
 | 🔲 | Week 4 | Implement masked image modeling (MIM) pretraining | Code | MAE (He et al.), SimMIM | Jupyter notebook training MAE on subset of ImageNet |
