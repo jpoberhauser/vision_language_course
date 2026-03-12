@@ -34,3 +34,8 @@
 | 🔲 | Week 5 | Add temporal or video-level extension (e.g. VideoMAE + BLIP2) | Research | VideoMAE, Flamingo | Model training logs + comparison with frame-level |
 | 🔲 | Week 6 | Perform ablation (frozen vs trained encoder) + build Streamlit dashboard | Experiment/Viz | Torch hooks, wandb, Streamlit, seaborn, t-SNE | Training chart comparison + interactive demo |
 | 🔲 | Week 7 | Draft paper-style report or detailed blog post | Writing | LaTeX or markdown | Full write-up with visuals + open-source GitHub repo |
+
+
+### Open-source Multi-modal models
+
+We can take a look at the fully open-sourced [Molmo2-Models](https://github.com/allenai/molmo2)
