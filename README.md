@@ -51,3 +51,12 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 ### Open-source Multi-modal models
 
 We can take a look at the fully open-sourced [Molmo2-Models](https://github.com/allenai/molmo2)
+
+
+## Module 4 (Optional) Building Vision Solutions with Transformers
+
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
+| --- | --- | --- | --- | --- | --- |
+| 🔲 | Week 1 | DETR | Scoping | build a Transformer Detector from scratch | |
+| 🔲 | Week 2 | Building on top of DETR | LW-DETR, RF-DETR |
+| 🔲 | Week 2 | Other Applications | MaskDino (segmentation) DETR-Pose (pose estimation) |
