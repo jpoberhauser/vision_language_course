@@ -14,39 +14,39 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 
 ## Module 1 Advanced Vision Transformer Foundations
 
-| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Deliverables** |
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
-| X | Week 1 | Re-implement basic ViT from scratch (no framework) | Code | ViT paper (Dosovitskiy), lucidrains' vit-pytorch [https://arxiv.org/abs/2010.11929] | Working ViT class + blog on attention in vision |
-| 🔲 | Week 2 | Compare ViT with Swin, CoAtNet, DeiT + deep dive on multi-head self-attention in spatial domain | Theory/Compare | Papers: Swin, DeiT, CoAtNet; timm repo; "Attention Is All You Need", Annotated Transformer | Comparison table + doc on token vs patch attention |
-| 🔲 | Week 3 | Implement masked image modeling (MIM) pretraining | Code | MAE (He et al.), SimMIM | Jupyter notebook training MAE on subset of ImageNet |
-| 🔲 | Week 4 | Visualize attention maps from ViT/DeiT | Analysis | vit-explain, einops, Captum | Gallery of attention visualizations for varied inputs |
-| 🔲 | Week 5 | Fine-tune pretrained DINO and build feature extractor pipeline | Replication/Utility | DINO paper + repo, HuggingFace AutoModel, ViT-B/16 | Fine-tuned DINO + Python module to extract [CLS] or token embeddings |
-| 🔲 | Week 6 | Mini project: Vision head classifier using frozen ViT | Project | ViT from HuggingFace, Scikit-learn | Classifier notebook + 2-minute Loom walk-through |
+| X | Week 1 | Re-implement basic ViT from scratch (no framework) | Code | ViT paper (Dosovitskiy), lucidrains' vit-pytorch [https://arxiv.org/abs/2010.11929] | [001_vit_from_scratch.ipynb](module1_vision_transformer_foundations/001_vit_from_scratch.ipynb) |
+| X | Week 2 | Compare ViT with Swin, CoAtNet, DeiT + deep dive on multi-head self-attention in spatial domain | Theory/Compare | Papers: Swin, DeiT, CoAtNet; timm repo; "Attention Is All You Need", Annotated Transformer | [002_compare_ViTs.ipynb](module1_vision_transformer_foundations/002_compare_ViTs.ipynb), [002_CoAtNet.ipynb](module1_vision_transformer_foundations/002_CoAtNet.ipynb) |
+| X | Week 3 | Implement masked image modeling (MIM) pretraining | Code | MAE (He et al.), SimMIM | [003_MAE.ipynb](module1_vision_transformer_foundations/003_MAE.ipynb) |
+| 🔲 | Week 4 | Visualize attention maps from ViT/DeiT | Analysis | vit-explain, einops, Captum | |
+| 🔲 | Week 5 | Fine-tune pretrained DINO and build feature extractor pipeline | Replication/Utility | DINO paper + repo, HuggingFace AutoModel, ViT-B/16 | |
+| 🔲 | Week 6 | Mini project: Vision head classifier using frozen ViT | Project | ViT from HuggingFace, Scikit-learn | |
 
 
 ## Module 2 Vision + Language Pretraining & Integration
 
-| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Deliverables** |
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
-| 🔲 | Week 1 | Reproduce CLIP (image-text contrastive training) | Code | OpenCLIP repo, CLIP paper | PyTorch script + training logs on custom pairs |
-| 🔲 | Week 2 | Create image-caption dataset (10k+ pairs) + vision prompt QA pairs | Data | LAION viewer, COCO, local annotations, GPT-based auto-captioning | JSONL dataset + 1k+ JSON prompts for VQA, uploaded to HuggingFace Hub |
-| 🔲 | Week 3 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | Working BLIP-style architecture on your data |
-| 🔲 | Week 4 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | Interactive VQA demo on your custom image set |
-| 🔲 | Week 5 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | Blog: "Why positional encodings matter in V+L" |
-| 🔲 | Week 6 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | Metric summary + report on attention pattern differences |
-| 🔲 | Week 7 | Train ViT + Qwen3 model using LoRA or QLoRA | Scaling | HuggingFace PEFT, bitsandbytes, Qwen3 | GPU-efficient model fine-tuned with <10GB |
+| 🔲 | Week 1 | Reproduce CLIP (image-text contrastive training) | Code | OpenCLIP repo, CLIP paper | |
+| 🔲 | Week 2 | Create image-caption dataset (10k+ pairs) + vision prompt QA pairs | Data | LAION viewer, COCO, local annotations, GPT-based auto-captioning | |
+| 🔲 | Week 3 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | |
+| 🔲 | Week 4 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | |
+| 🔲 | Week 5 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
+| 🔲 | Week 6 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
+| 🔲 | Week 7 | Train ViT + Qwen3 model using LoRA or QLoRA | Scaling | HuggingFace PEFT, bitsandbytes, Qwen3 | |
 
 ## Module 3 Research Project & Benchmarking
 
-| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Deliverables** |
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
-| 🔲 | Week 1 | Identify research niche (e.g. behavioral analysis, medical, robotics) | Scoping | arXiv-sanity, your own data | One-pager problem definition |
-| 🔲 | Week 2 | Design data pipeline for multimodal dataset | Infra | FiftyOne, decord, ffmpeg | Git repo: dataloader, formatter, uploader |
-| 🔲 | Week 3 | Define baseline (OpenCLIP/BLIP2 inference) | Baseline | HuggingFace Transformers | Benchmark accuracy on custom test set |
-| 🔲 | Week 4 | Explore image tokenization: VQ-VAE, visual tokens in modern VLMs | Theory/Code | VQ-VAE paper, Chameleon, Emu | Notebook implementing VQ-VAE + blog on image tokenization in VLMs |
-| 🔲 | Week 5 | Add temporal or video-level extension (e.g. VideoMAE + BLIP2) | Research | VideoMAE, Flamingo | Model training logs + comparison with frame-level |
-| 🔲 | Week 6 | Perform ablation (frozen vs trained encoder) + build Streamlit dashboard | Experiment/Viz | Torch hooks, wandb, Streamlit, seaborn, t-SNE | Training chart comparison + interactive demo |
-| 🔲 | Week 7 | Draft paper-style report or detailed blog post | Writing | LaTeX or markdown | Full write-up with visuals + open-source GitHub repo |
+| 🔲 | Week 1 | Identify research niche (e.g. behavioral analysis, medical, robotics) | Scoping | arXiv-sanity, your own data | |
+| 🔲 | Week 2 | Design data pipeline for multimodal dataset | Infra | FiftyOne, decord, ffmpeg | |
+| 🔲 | Week 3 | Define baseline (OpenCLIP/BLIP2 inference) | Baseline | HuggingFace Transformers | |
+| 🔲 | Week 4 | Explore image tokenization: VQ-VAE, visual tokens in modern VLMs | Theory/Code | VQ-VAE paper, Chameleon, Emu | |
+| 🔲 | Week 5 | Add temporal or video-level extension (e.g. VideoMAE + BLIP2) | Research | VideoMAE, Flamingo | |
+| 🔲 | Week 6 | Perform ablation (frozen vs trained encoder) + build Streamlit dashboard | Experiment/Viz | Torch hooks, wandb, Streamlit, seaborn, t-SNE | |
+| 🔲 | Week 7 | Draft paper-style report or detailed blog post | Writing | LaTeX or markdown | |
 
 
 ### Open-source Multi-modal models
