@@ -1,3 +1,16 @@
+# Intro to Visual-Language Modeling
+
+I couldn't find a good, hands-on course on this topic. This set of notebooks and exercises are a walkthrough, starting from vanilla ViT, going through image-text contrastive learning, and ending with a research project to bring everything together. 
+
+* Every module has the exercises I found useful to understand the models, along with training scripts on a small dataset that can easily run on a small GPU. 
+
+* Every module has an exercise notebook that walks through steps and has place-holders for your own implementation of the code. My solutions are also included if we need to reference. 
+
+* In the first module I walk through vanilla ViT from scratch, add some tricks like window-shifted attention, and work on self-supervised masked image modeling. Everything from scratch, and then we dig into other implementations from `timm` and `transformers` to see how the pros do it. 
+
+
+
+
 
 ## Module 1 Advanced Vision Transformer Foundations
 
