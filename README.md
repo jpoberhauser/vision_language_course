@@ -32,25 +32,29 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | 🔲 | Week 4 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | |
 | 🔲 | Week 5 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
 | 🔲 | Week 6 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
-| 🔲 | Week 7 | Train ViT + Qwen3 model using LoRA or QLoRA | Scaling | HuggingFace PEFT, bitsandbytes, Qwen3 | |
 
-## Module 3 Research Project & Benchmarking
+## Module 3 Modern VLMs & Research Project
 
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
-| 🔲 | Week 1 | Identify research niche (e.g. behavioral analysis, medical, robotics) | Scoping | arXiv-sanity, your own data | |
-| 🔲 | Week 2 | Design data pipeline for multimodal dataset | Infra | FiftyOne, decord, ffmpeg | |
-| 🔲 | Week 3 | Define baseline (OpenCLIP/BLIP2 inference) | Baseline | HuggingFace Transformers | |
+| 🔲 | Week 1 | Deep dive into modern VLM architectures — how vision encoder + connector + LLM fit together | Theory/Analysis | Raschka's "Understanding Multimodal LLMs", Qwen2.5-VL, Qwen3 technical reports | |
+| 🔲 | Week 2 | Run Qwen2.5-VL / Qwen3 inference — experiment with VQA, captioning, grounding, OCR | Code | Qwen2.5-VL, Qwen3, HuggingFace Transformers | |
+| 🔲 | Week 3 | Fine-tune Qwen-VL with LoRA/QLoRA on a custom domain | Fine-tuning | HuggingFace PEFT, bitsandbytes, Qwen-VL | |
 | 🔲 | Week 4 | Explore image tokenization: VQ-VAE, visual tokens in modern VLMs | Theory/Code | VQ-VAE paper, Chameleon, Emu | |
-| 🔲 | Week 5 | Add temporal or video-level extension (e.g. VideoMAE + BLIP2) | Research | VideoMAE, Flamingo | |
-| 🔲 | Week 6 | Perform ablation (frozen vs trained encoder) + build Streamlit dashboard | Experiment/Viz | Torch hooks, wandb, Streamlit, seaborn, t-SNE | |
+| 🔲 | Week 5 | Compare VLM architectures: Qwen-VL vs LLaVA vs Molmo — design differences and tradeoffs | Theory/Compare | Qwen-VL, LLaVA, Molmo papers + repos | |
+| 🔲 | Week 6 | Ablations on fine-tuned model + build Streamlit dashboard | Experiment/Viz | Torch hooks, wandb, Streamlit, seaborn, t-SNE | |
 | 🔲 | Week 7 | Draft paper-style report or detailed blog post | Writing | LaTeX or markdown | |
 
+### Suggested reading/watching
+* (Umar Jamil's Coding a Multimodal Vision Language Model from Scratch)[https://www.youtube.com/watch?v=vAmKB7iPkWw]
+
+* (Understanding MultiModal LLMs)[https://magazine.sebastianraschka.com/p/understanding-multimodal-llms]
 
 ### Open-source Multi-modal models
 
 We can take a look at the fully open-sourced [Molmo2-Models](https://github.com/allenai/molmo2)
 
+Also, a competitive fully open source vision encoder in (Franca)[https://github.com/valeoai/Franca]
 
 ## Module 4 (Optional) Building Vision Solutions with Transformers
 
@@ -58,4 +62,4 @@ We can take a look at the fully open-sourced [Molmo2-Models](https://github.com/
 | --- | --- | --- | --- | --- | --- |
 | 🔲 | Week 1 | DETR | Scoping | build a Transformer Detector from scratch | |
 | 🔲 | Week 2 | Building on top of DETR | LW-DETR, RF-DETR |
-| 🔲 | Week 2 | Other Applications | MaskDino (segmentation) DETR-Pose (pose estimation) |
+| 🔲 | Week 3 | Other Applications | MaskDino (segmentation) DETR-Pose (pose estimation) |
