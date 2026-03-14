@@ -35,6 +35,8 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 
 ## Module 3 Modern VLMs & Research Project
 
+* The main idea of Module 3 is that now that we have built everything from scratch to move on to: understand architecture → run inference → fine-tune → image tokenization theory → compare VLMs → ablate → write up
+
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
 | 🔲 | Week 1 | Deep dive into modern VLM architectures — how vision encoder + connector + LLM fit together | Theory/Analysis | Raschka's "Understanding Multimodal LLMs", Qwen2.5-VL, Qwen3 technical reports | |
