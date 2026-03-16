@@ -22,6 +22,7 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | 🔲 | Week 4 | Visualize attention maps, frozen feature extraction, linear probing. Compare DINOv2 vs CLIP attention. Survey: DINOv1→v2→v3, BEiT, JEPA, V-JEPAv2 | Analysis/Code | DINOv2, DINO, Captum, vit-explain, BEiT, JEPA, V-JEPAv2 papers | |
 
 
+
 ## Module 2 Vision + Language Pretraining & Integration
 
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
@@ -48,9 +49,23 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | 🔲 | Week 7 | Draft paper-style report or detailed blog post | Writing | LaTeX or markdown | |
 
 ### Suggested reading/watching
-* (Umar Jamil's Coding a Multimodal Vision Language Model from Scratch)[https://www.youtube.com/watch?v=vAmKB7iPkWw]
 
-* (Understanding MultiModal LLMs)[https://magazine.sebastianraschka.com/p/understanding-multimodal-llms]
+
+#### (Umar Jamil's Coding a Multimodal Vision Language Model from Scratch)[https://www.youtube.com/watch?v=vAmKB7iPkWw]
+
+#### (Understanding MultiModal LLMs)[https://magazine.sebastianraschka.com/p/understanding-multimodal-llms]
+
+
+#### (How AI Taught Itself to See)[https://www.youtube.com/watch?v=oGTasd3cliM]
+
+* How do we design a good feature representation from images?
+
+1. we can learn features by training a nn to solve a specific task. In other words, build a linear classifier on top of a nn that minimizes loss on a specific classification task. We can then take those learned weights and adapt them to a new task. This is called **transfer learning**. These learned weights can give us a starting point, but they often fail to capture all the rich semantic meaning in an image. 
+
+2. Natural language can give us more information about an image, without having to constrain the representations to find a fixed set of classes. We can describe the image with descriptions of the object, the actions, and the background. For that we need a **text encoder** to turn natural language into a feature vector. We want feature vectors for image and its descriptions to be similar. We can do this with contrastive learning on pairs of images and description sentences. Known as **Contrastive language-image pretraining**
+   
+3. The above still requires sentence descriptions for images which can be expensive. Is there a way to use only the images? Enter self-supervised learning. We need a supervision signal for training without labels. Historically, researches have used colorization as a supervision signal, rotation angle, masked pixel predictions (inpainting). The Dino models instead take augmented views of input images and the objective is to bring the embeddings pairs for matching source images closer, while pushing embeddings of different images far apart. Positive pairs should be high similarity (this was introduced in SimCLR). Dino extends this by taking a source images, making two augmented views and creating a student image encoder and a teacher image encoder. Features from both models are fed into a projection head to get the logits. After softmax, we get proba distributions. We train the student to match the teacher by calculating cross-entropy and minimizing. No gradient flows into teacher. Only student gets updated to match teacher. This is called **knowledge distillation**.  The output dimension of the teacher is large. We only update the teacher gradually, using exponential moving average. To avoid collapsed representations, they use co-centering. This encourages the model to spread soft-maxed predictions more evenly across the output dimension. 
+ 
 
 ### Open-source Multi-modal models
 
