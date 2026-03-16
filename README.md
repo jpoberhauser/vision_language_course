@@ -56,7 +56,7 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 #### (Understanding MultiModal LLMs)[https://magazine.sebastianraschka.com/p/understanding-multimodal-llms]
 
 
-#### (How AI Taught Itself to See)[https://www.youtube.com/watch?v=oGTasd3cliM]
+#### [How AI Taught Itself to See](https://www.youtube.com/watch?v=oGTasd3cliM)
 
 * How do we design a good feature representation from images?
 
