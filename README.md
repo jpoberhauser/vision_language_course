@@ -51,9 +51,9 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 ### Suggested reading/watching
 
 
-#### (Umar Jamil's Coding a Multimodal Vision Language Model from Scratch)[https://www.youtube.com/watch?v=vAmKB7iPkWw]
+#### [Umar Jamil's Coding a Multimodal Vision Language Model from Scratch](https://www.youtube.com/watch?v=vAmKB7iPkWw)
 
-#### (Understanding MultiModal LLMs)[https://magazine.sebastianraschka.com/p/understanding-multimodal-llms]
+#### [Understanding MultiModal LLMs](https://magazine.sebastianraschka.com/p/understanding-multimodal-llms)
 
 
 #### [How AI Taught Itself to See](https://www.youtube.com/watch?v=oGTasd3cliM)
