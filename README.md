@@ -27,12 +27,13 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
-| 🔲 | Week 1 | Reproduce CLIP (image-text contrastive training) | Code | OpenCLIP repo, CLIP paper | |
-| 🔲 | Week 2 | Create image-caption dataset (10k+ pairs) + vision prompt QA pairs | Data | LAION viewer, COCO, local annotations, GPT-based auto-captioning | |
-| 🔲 | Week 3 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | |
-| 🔲 | Week 4 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | |
-| 🔲 | Week 5 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
-| 🔲 | Week 6 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
+| 🔲 | Week 1 | Build a text encoder from scratch — tokenization, text transformer, sentence embeddings | Code | "Attention Is All You Need", HuggingFace tokenizers, Annotated Transformer | |
+| 🔲 | Week 2 | Reproduce CLIP (image-text contrastive training) | Code | OpenCLIP repo, CLIP paper | |
+| 🔲 | Week 3 | Create image-caption dataset (10k+ pairs) + vision prompt QA pairs | Data | LAION viewer, COCO, local annotations, GPT-based auto-captioning | |
+| 🔲 | Week 4 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | |
+| 🔲 | Week 5 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | |
+| 🔲 | Week 6 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
+| 🔲 | Week 7 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
 
 ## Module 3 Modern VLMs & Research Project
 
@@ -85,4 +86,5 @@ Also, a competitive fully open source vision encoder in (Franca)[https://github.
 | --- | --- | --- | --- | --- | --- |
 | 🔲 | Week 1 | DETR | Scoping | build a Transformer Detector from scratch | |
 | 🔲 | Week 2 | Building on top of DETR | LW-DETR, RF-DETR |
-| 🔲 | Week 3 | Other Applications | MaskDino (segmentation) DETR-Pose (pose estimation) |
+| 🔲 | Week 3 | Segmentation and Pose | MaskDino (segmentation) DETR-Pose (pose estimation) |
+| 🔲 | Week 4 | MOTracking |MOTR, MOTRv2 , TrackFormer, SAM|
