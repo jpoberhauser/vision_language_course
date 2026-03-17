@@ -44,8 +44,13 @@ Here, we start to build a self-supervised pre-training model. We try to understa
 
 
 **Connection to VLMs:**
-Some poeple say this is the 'BERT' moment for vision. How can we create models that learn without labels from massive datasets, that can give us useful weights for fine tuning or to use directly as representations. 
+Some people say this is the 'BERT' moment for vision. How can we create models that learn without labels from massive datasets, that can give us useful weights for fine tuning or to use directly as representations. 
 
 Understanding this paradigm is important to understand contrastive pre-training like in CLIP or SigLip. 
 
 
+### 004_linear_probing_encoders.ipynb and 004_understanding_attention.ipynb
+
+In this week, we use two notebooks. One to visualize and understand attention. Remember that you can select a patch and see what other patches it 'attends' to. We can also try to find some differences in DINO models vs language-supervised models and understand differences in 'objectness' and 'sharpness' of attention maps.
+
+Lastly, we build a very simple linear probe model on top of CIFAR100 and DINO embeddings to understand the usefulness of self-supervised embeddings. With a simple linear probe on top of the frozen model's embeddings we can get a competitive classifier on CIFAR100! 
