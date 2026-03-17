@@ -19,7 +19,7 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | X | Week 1 | Re-implement basic ViT from scratch (no framework) | Code | ViT paper (Dosovitskiy), lucidrains' vit-pytorch [https://arxiv.org/abs/2010.11929] | [001_vit_from_scratch.ipynb](module1_vision_transformer_foundations/001_vit_from_scratch.ipynb) |
 | X | Week 2 | Compare ViT with Swin, CoAtNet, DeiT + deep dive on multi-head self-attention in spatial domain | Theory/Compare | Papers: Swin, DeiT, CoAtNet; timm repo; "Attention Is All You Need", Annotated Transformer | [002_compare_ViTs.ipynb](module1_vision_transformer_foundations/002_compare_ViTs.ipynb), [002_CoAtNet.ipynb](module1_vision_transformer_foundations/002_CoAtNet.ipynb) |
 | X | Week 3 | Implement masked image modeling (MIM) pretraining | Code | MAE (He et al.), SimMIM | [003_MAE.ipynb](module1_vision_transformer_foundations/003_MAE.ipynb) |
-| 🔲 | Week 4 | Visualize attention maps, frozen feature extraction, linear probing. Compare DINOv2 vs CLIP attention. Survey: DINOv1→v2→v3, BEiT, JEPA, V-JEPAv2 | Analysis/Code | DINOv2, DINO, Captum, vit-explain, BEiT, JEPA, V-JEPAv2 papers | |
+| X | Week 4 | Visualize attention maps, frozen feature extraction, linear probing. Compare DINOv2 vs CLIP attention. | Analysis/Code | DINOv2, DINO, CLIP papers | |
 
 
 
@@ -27,7 +27,7 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
-| 🔲 | Week 1 | Build a text encoder from scratch — tokenization, text transformer, sentence embeddings | Code | "Attention Is All You Need", HuggingFace tokenizers, Annotated Transformer | |
+| X | Week 1 | Build a text encoder from scratch — tokenization, text transformer, sentence embeddings | Code | "Attention Is All You Need", HuggingFace tokenizers, Annotated Transformer | |
 | 🔲 | Week 2 | Reproduce CLIP (image-text contrastive training) | Code | OpenCLIP repo, CLIP paper | |
 | 🔲 | Week 3 | Create image-caption dataset (10k+ pairs) + vision prompt QA pairs | Data | LAION viewer, COCO, local annotations, GPT-based auto-captioning | |
 | 🔲 | Week 4 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | |
