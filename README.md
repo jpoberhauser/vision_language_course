@@ -35,19 +35,57 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | 🔲 | Week 6 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
 | 🔲 | Week 7 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
 
-## Module 3 Modern VLMs & Research Project
+## Module 3 Modern VLMs, Alignment & Agentic Systems
 
-* The main idea of Module 3 is that now that we have built everything from scratch to move on to: understand architecture → run inference → fine-tune → image tokenization theory → compare VLMs → ablate → write up
+* Now that we've built everything from scratch, this module shifts to: understand production VLM architectures → run inference → fine-tune → synthetic data → alignment → agentic systems 
 
-| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
-| --- | --- | --- | --- | --- | --- |
-| 🔲 | Week 1 | Deep dive into modern VLM architectures — how vision encoder + connector + LLM fit together | Theory/Analysis | Raschka's "Understanding Multimodal LLMs", Qwen2.5-VL, Qwen3 technical reports | |
-| 🔲 | Week 2 | Run Qwen2.5-VL / Qwen3 inference — experiment with VQA, captioning, grounding, OCR | Code | Qwen2.5-VL, Qwen3, HuggingFace Transformers | |
-| 🔲 | Week 3 | Fine-tune Qwen-VL with LoRA/QLoRA on a custom domain | Fine-tuning | HuggingFace PEFT, bitsandbytes, Qwen-VL | |
-| 🔲 | Week 4 | Explore image tokenization: VQ-VAE, visual tokens in modern VLMs | Theory/Code | VQ-VAE paper, Chameleon, Emu | |
-| 🔲 | Week 5 | Compare VLM architectures: Qwen-VL vs LLaVA vs Molmo — design differences and tradeoffs | Theory/Compare | Qwen-VL, LLaVA, Molmo papers + repos | |
-| 🔲 | Week 6 | Ablations on fine-tuned model + build Streamlit dashboard | Experiment/Viz | Torch hooks, wandb, Streamlit, seaborn, t-SNE | |
-| 🔲 | Week 7 | Draft paper-style report or detailed blog post | Writing | LaTeX or markdown | |
+### Phase 1 — Modern VLM Architectures & Inference
+
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
+| --- | --- | --- | --- | --- |
+| 🔲 | Week 1 | Deep dive into modern VLM architectures — read LLaVA, InternVL2, Qwen2.5-VL, Flamingo. Understand how vision encoder + connector + LLM backbone fit together | Theory | Raschka's "Understanding Multimodal LLMs", LLaVA, InternVL2, Qwen2.5-VL, Flamingo papers |
+| 🔲 | Week 2 | Run Qwen2.5-VL inference — experiment with VQA, captioning, grounding, OCR | Code | Qwen2.5-VL, HuggingFace Transformers |
+| 🔲 | Week 3 | Compare VLM architectures: Qwen-VL vs LLaVA vs Molmo — unified embedding vs cross-attention, connector design, tradeoffs | Theory/Compare | Qwen-VL, LLaVA, Molmo papers + repos |
+
+### Phase 2 — Fine-Tuning & Image Tokenization
+
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
+| --- | --- | --- | --- | --- |
+| 🔲 | Week 4 | Fine-tune a VLM (Qwen-VL or LLaVA-1.5) with LoRA/QLoRA on a custom domain | Fine-tuning | LLaMA-Factory, Swift, HuggingFace PEFT, bitsandbytes |
+| 🔲 | Week 5 | Explore image tokenization: VQ-VAE, visual tokens in modern VLMs | Theory/Code | VQ-VAE paper, Chameleon, Emu |
+| 🔲 | Week 6 | Ablations on fine-tuned model + build Streamlit dashboard | Experiment/Viz | Torch hooks, wandb, Streamlit, seaborn, t-SNE |
+
+### Phase 3 — Synthetic Data at Scale
+
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
+| --- | --- | --- | --- | --- |
+| 🔲 | Week 7 | Study data curation at scale — LAION, DataComp, data-constrained scaling | Theory | LAION, DataComp papers, "Scaling Data-Constrained Language Models" (Muennighoff et al.) |
+| 🔲 | Week 8 | Learn data mixture & quality research — optimal ratios, data selection | Theory | DoReMi, "Data Selection for LLMs" papers, data mixing laws |
+| 🔲 | Week 9 | Build a synthetic VQA dataset using a VLM as the labeler, fine-tune on it, evaluate | Code/Data | LLM-as-oracle approach, VQA generation pipelines |
+
+### Phase 4 — RL & Alignment for VLMs
+
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
+| --- | --- | --- | --- | --- |
+| 🔲 | Week 10 | RLHF foundations — InstructGPT, practical PPO/DPO tooling | Theory/Code | InstructGPT paper, TRL library (HuggingFace) |
+| 🔲 | Week 11 | Modern alignment methods — DPO, GRPO (DeepSeek-R1), RLCS (GLM-4.1V-Thinking) | Theory | DPO paper, DeepSeek-R1 report, GLM-4.1V-Thinking |
+| 🔲 | Week 12 | VLM-specific RL — RLVR (reinforcement learning from verifiable rewards). Hands-on: run a DPO fine-tune with TRL | Code | TRL, RLVR papers, HuggingFace PEFT |
+
+### Phase 5 — Agentic Systems
+
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
+| --- | --- | --- | --- | --- |
+| 🔲 | Week 13 | Study agent foundations — ReAct, Toolformer, AgentBench. Learn tool-use patterns (function calling, structured output) | Theory | ReAct, Toolformer, AgentBench papers, Anthropic API docs |
+| 🔲 | Week 14 | Build a small agent using smolagents or LangGraph with a VLM as perception module | Code | smolagents, LangGraph, Anthropic Claude agent SDK |
+
+### Phase 6 — Large-Scale Pretraining & JAX 
+
+| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
+| --- | --- | --- | --- | --- |
+| 🔲 | Week 15 | JAX/Flax basics — functional paradigm, jit, vmap, pmap | Code | JAX docs, Flax tutorials |
+| 🔲 | Week 16 | Scaling & systems papers — Chinchilla, LLM.int8(), FlashAttention | Theory | Chinchilla, LLM.int8(), FlashAttention papers |
+| 🔲 | Week 17 | Distributed pretraining concepts — Megatron-LM, NeMo | Theory/Code | Megatron-LM, NVIDIA NeMo |
+
 
 ### Suggested reading/watching
 
@@ -66,7 +104,7 @@ We can take a look at the fully open-sourced [Molmo2-Models](https://github.com/
 
 Also, a competitive fully open source vision encoder in (Franca)[https://github.com/valeoai/Franca]
 
-## Module 4 (Optional) Building Vision Solutions with Transformers
+## Optional Module Building Vision Solutions with Transformers
 
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
