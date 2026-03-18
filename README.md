@@ -28,7 +28,7 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
 | X | Week 1 | Build a text encoder from scratch — tokenization, text transformer, sentence embeddings | Code | "Attention Is All You Need", HuggingFace tokenizers, Annotated Transformer | |
-| 🔲 | Week 2 | Reproduce CLIP (image-text contrastive training) | Code | OpenCLIP repo, CLIP paper | |
+| X | Week 2 | Reproduce CLIP (image-text contrastive training) | Code | OpenCLIP repo, CLIP paper | |
 | 🔲 | Week 3 | Create image-caption dataset (10k+ pairs) + vision prompt QA pairs | Data | LAION viewer, COCO, local annotations, GPT-based auto-captioning | |
 | 🔲 | Week 4 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | |
 | 🔲 | Week 5 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | |
