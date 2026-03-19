@@ -71,7 +71,34 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | 🔲 | Week 11 | Modern alignment methods — DPO, GRPO (DeepSeek-R1), RLCS (GLM-4.1V-Thinking) | Theory | DPO paper, DeepSeek-R1 report, GLM-4.1V-Thinking |
 | 🔲 | Week 12 | VLM-specific RL — RLVR (reinforcement learning from verifiable rewards). Hands-on: run a DPO fine-tune with TRL | Code | TRL, RLVR papers, HuggingFace PEFT |
 
+#### Suggested reading
+
+(Reinforcement Learning (RL) Guide from Unsloth)[https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide]
+
+* RL is where and agent learns to make decisions by interacting with an environment and receiving feedback [rewards, penalties].
+* **Action:** What the model generates (an answer to a question)
+* **Reward:** A signal that indicates how good or bad the model's answer is. Dit it follow instructions, does it handle safety?
+* **Environment:** The scenario or task that the model is working on. For example code generation, helpfullness, etc..
+
+* Things to pay attention to: RL, RLVR, PPO, GRPO, RLHF, RF, DPO. 
+
 ### Phase 5 — Agentic Systems
+
+* What are agentic systems?
+* A 'normal LLM interaction' is basically you ask a question and it gives back a text answer. 
+* An **agent** is adding actions into a loop. So instead of answering right away the loop can:
+   1. Reason or think about the steps
+   2. Call a tool (code, calculator, use an API, read a file for context)
+   3. observe a result and decide if it makes sense, or if it needs another tool call or more reasoning
+   4. repeat until answer is satisfactory.
+
+* It boils down to think/act/observe/loop
+
+How do agents and VLMS interact? 
+
+* If you give an agent vision capabilities, it now can read markdown and also a pdf to understand a chart for example. It can see a screenshot and understand the layout and feed that into the generation. It can watch a video and understand. 
+* So the VLM becomes the perception 'brain' that an agent can use in its loop. 
+
 
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
 | --- | --- | --- | --- | --- |
@@ -104,7 +131,7 @@ We can take a look at the fully open-sourced [Molmo2-Models](https://github.com/
 
 Also, a competitive fully open source vision encoder in (Franca)[https://github.com/valeoai/Franca]
 
-## Optional Module Building Vision Solutions with Transformers
+## Optional Module: Building Vision Solutions with Transformers
 
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
 | --- | --- | --- | --- | --- | --- |
