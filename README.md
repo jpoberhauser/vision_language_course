@@ -29,11 +29,10 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | --- | --- | --- | --- | --- | --- |
 | X | Week 1 | Build a text encoder from scratch — tokenization, text transformer, sentence embeddings | Code | "Attention Is All You Need", HuggingFace tokenizers, Annotated Transformer | |
 | X | Week 2 | Reproduce CLIP (image-text contrastive training) | Code | OpenCLIP repo, CLIP paper | |
-| 🔲 | Week 3 | Create image-caption dataset (10k+ pairs) + vision prompt QA pairs | Data | LAION viewer, COCO, local annotations, GPT-based auto-captioning | |
-| 🔲 | Week 4 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | |
-| 🔲 | Week 5 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | |
-| 🔲 | Week 6 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
-| 🔲 | Week 7 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
+| 🔲 | Week 3 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | |
+| 🔲 | Week 4 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | |
+| 🔲 | Week 5 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
+| 🔲 | Week 6 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
 
 ## Module 3 Modern VLMs, Alignment & Agentic Systems
 
@@ -55,11 +54,11 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | 🔲 | Week 5 | Explore image tokenization: VQ-VAE, visual tokens in modern VLMs | Theory/Code | VQ-VAE paper, Chameleon, Emu |
 | 🔲 | Week 6 | Ablations on fine-tuned model + build Streamlit dashboard | Experiment/Viz | Torch hooks, wandb, Streamlit, seaborn, t-SNE |
 
-### Phase 3 — Synthetic Data at Scale
+### Phase 3 — Data: Curation, Captioning & Synthetic Pipelines
 
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
 | --- | --- | --- | --- | --- |
-| 🔲 | Week 7 | Study data curation at scale — LAION, DataComp, data-constrained scaling | Theory | LAION, DataComp papers, "Scaling Data-Constrained Language Models" (Muennighoff et al.) |
+| 🔲 | Week 7 | Create image-caption dataset (10k+ pairs) + vision prompt QA pairs. Study data curation at scale — LAION, DataComp | Data/Theory | LAION viewer, COCO, local annotations, GPT-based auto-captioning, DataComp papers, "Scaling Data-Constrained Language Models" (Muennighoff et al.) |
 | 🔲 | Week 8 | Learn data mixture & quality research — optimal ratios, data selection | Theory | DoReMi, "Data Selection for LLMs" papers, data mixing laws |
 | 🔲 | Week 9 | Build a synthetic VQA dataset using a VLM as the labeler, fine-tune on it, evaluate | Code/Data | LLM-as-oracle approach, VQA generation pipelines |
 
@@ -73,7 +72,7 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 
 #### Suggested reading
 
-(Reinforcement Learning (RL) Guide from Unsloth)[https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide]
+[Reinforcement Learning (RL) Guide from Unsloth](https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide)
 
 * RL is where and agent learns to make decisions by interacting with an environment and receiving feedback [rewards, penalties].
 * **Action:** What the model generates (an answer to a question)
