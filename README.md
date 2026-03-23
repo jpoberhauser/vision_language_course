@@ -34,6 +34,30 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | 🔲 | Week 5 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
 | 🔲 | Week 6 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
 
+### VLM Benchmarks
+
+Key benchmarks to know when evaluating vision-language models:
+
+| **Benchmark** | **What it measures** | **Task type** |
+| --- | --- | --- |
+| **MMMU** | College-level multi-discipline reasoning over images (charts, diagrams, photos) | VQA / reasoning |
+| **MMBench** | Broad multi-modal understanding — perception, reasoning, OCR | VQA |
+| **SEED-Bench** | Generative comprehension across 12 dimensions (spatial, temporal, etc.) | VQA / multi-choice |
+| **TextVQA** | Reading and reasoning about text within images | OCR + VQA |
+| **DocVQA** | Understanding documents — forms, tables, receipts | Document VQA |
+| **ChartQA** | Answering questions about charts and plots | Chart reasoning |
+| **VQAv2** | Open-ended visual question answering on natural images | VQA (classic) |
+| **GQA** | Compositional reasoning — multi-step spatial questions | VQA / reasoning |
+| **COCO Captions** | Image captioning quality (CIDEr, BLEU, METEOR scores) | Captioning |
+| **Flickr30k / COCO Retrieval** | Image-text retrieval (Recall@1, Recall@5, Recall@10) | Retrieval |
+| **RealWorldQA** | Real-world spatial understanding and reasoning | VQA |
+| **POPE** | Detecting object hallucination — does the model see things that aren't there? | Hallucination |
+
+* **Retrieval metrics** (Recall@K): given a query, is the correct match in the top K results? Directly relevant to CLIP.
+* **Captioning metrics** (CIDEr, BLEU, METEOR): compare generated captions to human references. Relevant for BLIP/LLaVA.
+* **VQA accuracy**: exact-match or soft-match against ground truth answers.
+* **Hallucination** is a major open problem — models confidently describe objects that aren't in the image. POPE specifically tests for this.
+
 ## Module 3 Modern VLMs, Alignment & Agentic Systems
 
 * Now that we've built everything from scratch, this module shifts to: understand production VLM architectures → run inference → fine-tune → synthetic data → alignment → agentic systems 
