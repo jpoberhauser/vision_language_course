@@ -67,7 +67,7 @@ Key benchmarks to know when evaluating vision-language models:
 | **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
 | --- | --- | --- | --- | --- |
 | 🔲 | Week 1 | Deep dive into modern VLM architectures — read LLaVA, InternVL2, Qwen2.5-VL, Flamingo. Understand how vision encoder + connector + LLM backbone fit together | Theory | Raschka's "Understanding Multimodal LLMs", LLaVA, InternVL2, Qwen2.5-VL, Flamingo papers |
-| 🔲 | Week 2 | Run Qwen2.5-VL inference — experiment with VQA, captioning, grounding, OCR | Code | Qwen2.5-VL, HuggingFace Transformers |
+| 🔲 | Week 2 | Fine-Tune and Understand Qwen3.5 and Unsloth| Code | [Qwen2.5-VL](https://unsloth.ai/docs/models/qwen3.5/fine-tune), HuggingFace Transformers |
 | 🔲 | Week 3 | Compare VLM architectures: Qwen-VL vs LLaVA vs Molmo — unified embedding vs cross-attention, connector design, tradeoffs | Theory/Compare | Qwen-VL, LLaVA, Molmo papers + repos |
 
 ### Phase 2 — Fine-Tuning & Image Tokenization

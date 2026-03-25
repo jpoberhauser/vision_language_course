@@ -85,8 +85,8 @@ class TransformerBlock(nn.Module):
         self.ffn = FeedForward(dim, mlp_dim, dropout)
 
     def forward(self, x):
-        x = x + self.attn(self.norm1(x))
-        x = x + self.ffn(self.norm2(x))
+        x = x + self.attn(self.norm1(x))# skip connection around attention
+        x = x + self.ffn(self.norm2(x))# skip connection around FF
         return x
 
 
