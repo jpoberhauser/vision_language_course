@@ -29,10 +29,11 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 | --- | --- | --- | --- | --- | --- |
 | X | Week 1 | Build a text encoder from scratch — tokenization, text transformer, sentence embeddings | Code | "Attention Is All You Need", HuggingFace tokenizers, Annotated Transformer | |
 | X | Week 2 | Reproduce CLIP (image-text contrastive training) | Code | OpenCLIP repo, CLIP paper | |
-| 🔲 | Week 3 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | |
-| 🔲 | Week 4 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | |
-| 🔲 | Week 5 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
-| 🔲 | Week 6 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
+| X | Week 3 | Implement full SigLip from scratch. Fine-tune our SigLip. Implement PaliGemma from scratch following tutorial video| Model Dev | SigLip paper, [Umar Jamil's tutorial](https://www.youtube.com/watch?v=vAmKB7iPkWw) | |
+| 🔲 | Week 4 | Implement visual encoder + LLM head for BLIP-style model | Model Dev | BLIP2 paper, transformers | |
+| 🔲 | Week 5 | Fine-tune pretrained LLaVA model on niche domain | Fine-tuning | LLaVA repo, visual instruction tuning | |
+| 🔲 | Week 6 | Study positional embeddings in vision-language transformers | Theory | "Sinusoidal Encoding Explained", Flamingo paper | |
+| 🔲 | Week 7 | Evaluate model on retrieval/captioning metrics + ablate cross-attention | Eval/Research | pycocoevalcap, Recall@K, Flamingo, BLIP2, LLaVA | |
 
 ### VLM Benchmarks
 
@@ -141,11 +142,15 @@ How do agents and VLMS interact?
 
 
 #### [Umar Jamil's Coding a Multimodal Vision Language Model from Scratch](https://www.youtube.com/watch?v=vAmKB7iPkWw)
+- [Part 1: Vision Encoders (notebook)](suggested_reading/multimodal_lm_from_scratch_umar_jamil/part1_vision_encoders.ipynb)
 
 #### [Understanding MultiModal LLMs](https://magazine.sebastianraschka.com/p/understanding-multimodal-llms)
-
+- [Notes (notebook)](suggested_reading/raschka_understanding_mmllms.ipynb)
 
 #### [How AI Taught Itself to See](https://www.youtube.com/watch?v=oGTasd3cliM)
+- [Notes (notebook)](suggested_reading/teaching_ai_to_see.ipynb)
+
+#### [Attend Before Attention: Efficient and Scalable Video Understanding via Autoregressive Gazing](https://autogaze.github.io/)
 
 
 ### Open-source Multi-modal models
