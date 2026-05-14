@@ -8,6 +8,7 @@ I couldn't find a good, hands-on course on this topic. This set of notebooks and
 
 * In the first module I walk through vanilla ViT from scratch, add some tricks like window-shifted attention, and work on self-supervised masked image modeling. Everything from scratch, and then we dig into other implementations from `timm` and `transformers` to see how the pros do it. 
 
+> Companion repo: **[vision-transformers-and-ssl](../vision-transformers-and-ssl)** covers deeper transformer foundations and self-supervised learning — DETR family for detection/segmentation/tracking, and a full 6-phase module on image + video SSL (DINOv2, V-JEPA, evaluation harness, applied projects). Module 1 here mirrors Module 1 there.
 
 
 
@@ -158,21 +159,3 @@ We can take a look at the fully open-sourced [Molmo2-Models](https://github.com/
 
 Also, a competitive fully open source vision encoder in (Franca)[https://github.com/valeoai/Franca]
 
-## Optional Module: Building Vision Solutions with Transformers
-
-| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** | **Solutions** |
-| --- | --- | --- | --- | --- | --- |
-| 🔲 | Week 1 | DETR | Scoping | build a Transformer Detector from scratch | |
-| 🔲 | Week 2 | Building on top of DETR | LW-DETR, RF-DETR |
-| 🔲 | Week 3 | Segmentation and Pose | MaskDino (segmentation) DETR-Pose (pose estimation) |
-| 🔲 | Week 4 | MOTracking |MOTR, MOTRv2 , TrackFormer, SAM|
-
-## Optional Module 2: Self-Supervised Video Models
-
-| **Status** | **Week** | **Task / Goal** | **Category** | **Resources** |
-| --- | --- | --- | --- | --- |
-| 🔲 | Week 1 | Understand space-time attention — how ViT extends to video | Theory | TimeSformer, ViViT papers |
-| 🔲 | Week 2 | Implement masked video modeling — VideoMAE | Code | VideoMAE paper, extends MAE from Module 1 |
-| 🔲 | Week 3 | Joint embedding approaches — V-JEPA, predict representations not pixels | Theory/Code | V-JEPA (Meta), BYOL, VICReg |
-| 🔲 | Week 4 | Video generation with discrete tokens — VideoGPT, video VQ-VAE | Code | VideoGPT paper, VQ-VAE |
-| 🔲 | Week 5 | Compare approaches: reconstruction vs joint embedding vs generative on downstream tasks | Analysis | Benchmarks: Kinetics, SSv2, UCF101 |
