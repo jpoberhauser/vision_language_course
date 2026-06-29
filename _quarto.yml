@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Intro to Vision-Language Modeling"
+  description: "A hands-on course from ViT through modern vision-language models"
+  repo-url: https://github.com/jpoberhauser/vision_language_course
+  repo-actions: [edit, source, issue]
+  page-navigation: true
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - text: "Home"
+        href: index.qmd
+      - section: "Module 1 — Vision Transformer Foundations"
+        contents:
+          - module1_vision_transformer_foundations/001_vit_from_scratch.ipynb
+          - module1_vision_transformer_foundations/002_compare_ViTs.ipynb
+          - module1_vision_transformer_foundations/002_CoAtNet.ipynb
+          - module1_vision_transformer_foundations/003_MAE.ipynb
+          - module1_vision_transformer_foundations/004_understanding_attention.ipynb
+          - module1_vision_transformer_foundations/004_linear_probing_encoders.ipynb
+      - section: "Module 1 — Exercises"
+        contents:
+          - module1_exercises/001_vit_from_scratch_exercises.ipynb
+          - module1_exercises/002_compare_ViTs_exercises.ipynb
+          - module1_exercises/002_CoAtNet_exercises.ipynb
+          - module1_exercises/003_MAE_exercises.ipynb
+      - section: "Module 2 — Vision-Language Foundations"
+        contents:
+          - module2_vision_language_foundations/005_text_encoder.ipynb
+          - module2_vision_language_foundations/006_CLIP.ipynb
+          - module2_vision_language_foundations/007_SigLip.ipynb
+          - module2_vision_language_foundations/008_Molmo_understand_and_finetune.ipynb
+          - module2_vision_language_foundations/009_Molmo2_finetune_qlora.ipynb
+          - module2_vision_language_foundations/Molmo2FineTune_onGoogleCollab.ipynb
+          - module2_vision_language_foundations/llava_understand_and_finetune.ipynb
+      - section: "Suggested Reading"
+        contents:
+          - suggested_reading/raschka_understanding_mmllms.ipynb
+          - suggested_reading/teaching_ai_to_see.ipynb
+      - section: "Appendix"
+        contents:
+          - vqa_data_prep.ipynb
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: github
+
+execute:
+  enabled: false
