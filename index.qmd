@@ -1,27 +1,5 @@
 ---
-title: "Intro to Vision-Language Modeling"
+title: ""
 ---
 
-I couldn't find a good, hands-on course on this topic. This set of notebooks and exercises is a walkthrough, starting from vanilla ViT, going through image-text contrastive learning, and ending with a research project to bring everything together.
-
-- Every module has the exercises I found useful to understand the models, along with training scripts on a small dataset that can easily run on a small GPU.
-- Every module has an exercise notebook that walks through steps and has placeholders for your own implementation. My solutions are also included for reference.
-- Module 1 walks through vanilla ViT from scratch, adds tricks like window-shifted attention, and works on self-supervised masked image modeling — all from scratch, then a comparison against `timm` and `transformers` to see how the pros do it.
-
-> Companion repo: **[vision-transformers-and-ssl](https://github.com/jpoberhauser/vision-transformers-and-ssl)** covers deeper transformer foundations and self-supervised learning — DETR family for detection/segmentation/tracking, and a full 6-phase module on image + video SSL (DINOv2, V-JEPA, evaluation harness, applied projects). Module 1 here mirrors Module 1 there.
-
-## How to use this site
-
-- Use the left sidebar to navigate the modules.
-- Every page is a Jupyter notebook — click **"</> Code"** or **"Edit this page"** at the top-right to view the source on GitHub.
-- To run a notebook yourself, clone the repo and open it in Jupyter:
-
-```bash
-git clone https://github.com/jpoberhauser/vision_language_course.git
-cd vision_language_course
-jupyter lab
-```
-
-## Source
-
-Everything in this site is generated from the [GitHub repo](https://github.com/jpoberhauser/vision_language_course). See the README there for the full module-by-module table with paper references and status.
+{{< include README.md >}}
